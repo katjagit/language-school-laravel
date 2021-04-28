@@ -16,19 +16,20 @@
         <button id="button-f" class="sort-button">Fortgeschrittene</button>
         <button id="button-all" class="sort-button">Alle</button>
         <div id="courses" class="courses">
-
-            <div class="container">
-                <img src="#" alt="img">
-                <section>
-                    <h3>Titel</h3>
-                    <p>Kurs</p>
-                    <form action="#" method="POST">
-                        <button type="submit" name="action" value="course-start" class="courses-button">starten</button>
-                        <input type="hidden" name="course-id" value="">
-                    </form>
-                    <p class="hidden level"></p>
-                </section>
-            </div>
+            @foreach($courses as $el)
+                <div class="container">
+                    <img src="{{ $el->img }}" alt="img">
+                    <section>
+                        <h3>{{ $el->name }}</h3>
+                        <p>{{ $el->description }}</p>
+                        <form action="#" method="POST">
+                            <button type="submit" name="action" value="course-start" class="courses-button">starten</button>
+                            <input type="hidden" name="course-id" value="">
+                        </form>
+                        <p class="hidden level"></p>
+                    </section>
+                </div>
+            @endforeach
         </div>
     </main>
 @endsection

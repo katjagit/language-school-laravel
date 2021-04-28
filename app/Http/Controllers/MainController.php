@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Course;
 use Illuminate\Http\Request;
 use Validator;
 
@@ -13,7 +14,8 @@ class MainController extends Controller
     }
 
     public function courses(){
-        return view('courses');
+        $courses = new Course();
+        return view('courses', ['courses' => $courses->all()]);
     }
 
     public function contact(){
