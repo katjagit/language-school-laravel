@@ -1,0 +1,761 @@
+/*Layout global*/
+
+html {
+    background: white;
+    font-size: 1em;
+    color: #3c3c3c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.wrap85 {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.width45 {
+    max-width: 45%;
+    margin: 0 auto;
+}
+
+.width30 {
+    max-width: 30vw;
+    margin: 0 auto;
+}
+
+.width75 {
+    width: 75%;
+}
+
+.width65 {
+    width: 65%;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.margin_top_3em {
+    margin-top: 3em;
+}
+
+.margin_top {
+    margin-top: 3em;
+}
+
+.margin_bottom {
+    margin-bottom: 5em;
+}
+
+.margin_auto {
+    margin: 0 auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5em auto;
+}
+
+.flex div {
+    width: 25%;
+}
+
+
+/*Logo and Navigation*/
+
+.main_menu ul li {
+    float: left;
+    display: block;
+}
+
+.main_menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main_menu a {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #083b66;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0.5em 0;
+}
+
+.main_menu a:hover,
+.main_menu a:active,
+.main_menu a:focus {
+    background: #083b66;
+    color: white;
+    border-radius: 13px;
+}
+
+.main_menu .active {
+    background: #083b66;
+    color: white;
+    border-radius: 13px;
+}
+
+.main_menu::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Menupoint "sign in"-> "Anmelden" */
+
+#login {
+    color: white;
+    background: rgb(74, 218, 174);
+    border-radius: 13px;
+}
+
+.logo {
+    float: left;
+}
+
+.top_nav {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.top_nav img {
+    max-width: 80%;
+}
+
+
+/* disable open/close in the desktop layout*/
+
+.main_menu .open,
+.main_menu .close {
+    display: none;
+}
+
+
+/*Hero and Header*/
+
+.hero {
+    background: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    background-image: linear-gradient(rgba(8, 60, 102, 0.726), rgba(11, 12, 29, 0.904)), url(../medien/home/person.jpg);
+}
+
+header h1 {
+    font-size: 3.5vw;
+}
+
+header h2 {
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+}
+
+.hero_text {
+    width: 50%;
+    text-align: center;
+}
+
+header button {
+    background-color: rgb(219, 78, 78);
+    color: white;
+    font-size: 1.6vw;
+    cursor: pointer;
+    padding: .7vw 4vw;
+    border-radius: 3px;
+    border: 3px solid rgb(219, 78, 78);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header button:hover,
+header button:focus {
+    background: rgb(58, 173, 139);
+    border: 3px solid rgb(58, 173, 139);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #00806c;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #a71b22;
+}
+
+
+/* Block mit 3 Icons */
+
+.icon_block div {
+    text-align: center;
+}
+
+.icon_block img {
+    width: 35%;
+    height: auto;
+}
+
+
+/*Block Description*/
+
+.description {
+    background-image: linear-gradient(rgba(14, 60, 121, 0.726), rgb(2, 2, 5)), url(../medien/home/school.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    color: white;
+    padding: 4em 0;
+}
+
+.description h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.description>p:nth-of-type(1) {
+    max-width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.description p {
+    line-height: 1.3em;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.description img {
+    display: block;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 1%;
+}
+
+.description h2 {
+    font-size: 2em;
+}
+
+
+/*Block Counter*/
+
+.counter {
+    background-color: rgba(8, 59, 102, 1);
+    background-image: linear-gradient(#1bb4c1c4, #1aa3b7), url(../medien/home/city.jpg);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.counter div div {
+    text-align: center;
+}
+
+.count {
+    font-size: 4em;
+    color: white;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/*Block News*/
+
+.news {
+    padding: 4em 0;
+    line-height: 1.3em;
+    font-size: 1.1em;
+}
+
+.news h3 {
+    font-size: 1.6em;
+}
+
+.news div {
+    width: 40%;
+    padding: 3%;
+}
+
+.newsletter {
+    background: #fff2eb;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 20px gray;
+    text-align: center;
+    padding: 2em;
+}
+
+.newsletter label {
+    padding-right: .4em;
+}
+
+.newsletter #email {
+    border: 1px solid rgb(168, 168, 168);
+    width: 40%;
+    padding: .5em .4em;
+}
+
+.newsletter #news_button {
+    padding: 1em 4em;
+    background: #058e83;
+    border: none;
+    margin-top: 1em;
+    color: #ffffff;
+    font-size: 0.8em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.newsletter #news_button:hover,
+.newsletter #news_button:focus {
+    background: #083b66;
+    color: white;
+}
+
+.error_form {
+    display: block;
+    font-size: 0.8em;
+    background: yellow;
+    width: 70%;
+    margin: 0 auto;
+    color: red;
+    font-weight: bold;
+}
+
+.feedback {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: forestgreen;
+    text-align: center;
+}
+
+
+/*Bottom-Footer*/
+
+footer {
+    background: #6e7077;
+}
+
+.bottom_footer {
+    background: #6e7077;
+    color: white;
+    padding: 1.7em 0;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.bottom_footer ul li {
+    list-style: none;
+    padding: 6px 0px 6px 0px;
+}
+
+.bottom_footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom_footer ul li a:hover {
+    color: #60dcff;
+}
+
+.bottom_footer .social-icon {
+    max-width: 15%;
+}
+
+
+/***** CONTACT *****/
+
+form input {
+    padding: .6em;
+    margin-bottom: .7em;
+    border: 1px solid #d0c6c6;
+}
+
+form legend {
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+form fieldset {
+    border: 2px solid gray;
+    margin-bottom: 1em;
+    background: rgb(212, 229, 231);
+    padding: 1em 2em;
+}
+
+form label {
+    /* display: inline-block; */
+    width: 5.8em;
+    font-size: 1em;
+}
+
+form .radio {
+    padding-top: 10px;
+    width: 17%;
+}
+
+form .label-checkbox {
+    padding-top: 1em;
+    width: 50%;
+}
+
+form .checkbox {
+    margin-left: 0;
+}
+
+form #label_grund {
+    width: 10em;
+}
+
+form select {
+    padding: .5em;
+    font-size: 0.8em;
+    border: 1px solid #d0c6c6;
+}
+
+form #label_subject {
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+}
+
+form #text_area {
+    display: inline-block;
+    padding-top: 1em;
+    width: auto;
+}
+
+form textarea {
+    border: 1px solid #d0c6c6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 90%;
+    height: 150px;
+    padding: .6em;
+}
+
+.submit_button {
+    margin: 1em auto 0 auto;
+    cursor: pointer;
+    font-weight: 600;
+    background: #177b77;
+    color: white;
+    font-size: 1em;
+    padding: 0.7em 3.3em 0.7em 3.3em;
+    border: none;
+}
+
+.submit_button:hover,
+.submit_button:focus {
+    background: #b60d0d;
+    color: white;
+}
+
+.req::before {
+    content: "*";
+    color: red;
+    margin-right: 4px;
+}
+
+
+/***** COURSES *****/
+
+.container {
+    border: 2px solid slategray;
+    box-shadow: 7px 7px rgb(192, 199, 207);
+    width: 35%;
+    margin-bottom: 2%;
+    background: rgb(212, 229, 231);
+}
+
+.hidden {
+    display: none;
+}
+
+.container img {
+    width: 100%;
+}
+
+.courses-button {
+    background: white;
+    padding: .7em 4em;
+    font-size: 1em;
+    font-weight: 700;
+    border: 3px solid #ffffff;
+    border-radius: 2%;
+    color: rgb(60, 136, 207);
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.courses-button:hover {
+    background: rgb(230, 73, 73);
+    border: 3px solid rgb(230, 73, 73);
+    color: white;
+}
+
+.container section {
+    padding: 1em;
+}
+
+#courses {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5em auto;
+    flex-wrap: wrap;
+}
+
+#h2-courses {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.courses-width {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sort-button {
+    background: #fbfbfb;
+    border: 2px solid darkgreen;
+    border-radius: 9px;
+    padding: 2px 10px 2px 10px;
+    font-size: 0.9em;
+}
+
+.sort-button:hover {
+    background: rgb(197, 235, 217);
+    cursor: pointer;
+}
+
+
+/*RESPONSIVE DESIGN*/
+
+
+/*Navigation*/
+
+@media screen and (max-width:1310px) {
+    .width30 {
+        max-width: 65vw;
+    }
+    .main_menu a {
+        font-size: 1.2em;
+        margin-left: .7em;
+    }
+    .hero .wrap85 {
+        max-width: 100%;
+    }
+    .hero_text {
+        width: 95%;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 1em;
+    }
+    header button {
+        font-size: 1em;
+        padding: 1vw 4em;
+    }
+    /*Block with Icons*/
+    .icon_block div {
+        width: 30%;
+    }
+    /*Block Description*/
+    .description>p:nth-of-type(1) {
+        max-width: 80%;
+        font-size: 1.3rem;
+        line-height: 1.3em;
+    }
+    .description p {
+        font-size: 1.1rem;
+    }
+    .icon_block img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    /* Courses */
+    .courses section {
+        width: auto;
+    }
+    .container {
+        width: 100%;
+    }
+    /*Contact*/
+    #div-contact {
+        max-width: 65vw;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .main_menu ul li {
+        width: auto;
+        float: none;
+        padding-right: 2em;
+    }
+    #close {
+        text-align: center;
+        font-size: 1.2em;
+        text-transform: none;
+        border-bottom: 1px solid gray;
+        color: maroon;
+    }
+    #close:hover,
+    #close:focus {
+        color: white;
+    }
+    .main_menu li a {
+        text-align: left;
+        background: rgba(128, 128, 128, 0.26);
+        border-radius: 6%;
+        margin-bottom: 6px;
+        font-size: 1em;
+        padding: .5em;
+        margin: .4em 0;
+    }
+    /* Hamburger - Links*/
+    .main_menu .open {
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+    }
+    /* Navi opened - disable the link*/
+    .main_menu #open:target {
+        display: none;
+    }
+    /* close the link */
+    .main_menu #open:target~.close {
+        display: block
+    }
+    /* open the navi again */
+    .main_menu #open:target~ul {
+        display: block
+    }
+    /*disable the list*/
+    .main_menu>ul {
+        display: none;
+    }
+    .main_menu .open:hover,
+    .main_menu .close:hover {
+        background: transparent;
+    }
+    /*Header*/
+    .hero_text {
+        width: 80%;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 1.5em;
+    }
+    header button {
+        font-size: 1em;
+        padding: 2vw 4vw;
+    }
+    /*Block with Icons*/
+    .flex {
+        flex-direction: column;
+    }
+    .flex div {
+        width: 100%;
+    }
+    .icon_block img {
+        width: 15%;
+    }
+    /* Courses */
+    .courses section {
+        width: 100%;
+        margin-left: 0;
+    }
+    .courses img {
+        width: 60%;
+    }
+    .courses h2 {
+        text-align: left;
+        margin-left: 0;
+    }
+    .container section {
+        width: auto;
+    }
+    #courses {
+        max-width: 100%;
+    }
+    #courses img {
+        width: 100%;
+    }
+    .news {
+        padding: 0;
+    }
+    .bottom_footer {
+        text-align: center;
+    }
+    .bottom_footer .logo {
+        float: none;
+    }
+    .bottom_footer ul {
+        padding: 0;
+    }
+    .bottom_footer p a img {
+        width: 6vw;
+    }
+    /*KONTAKT*/
+    .contact,
+    .contact form {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header h1 {
+        font-size: 6vw;
+    }
+    header h2 {
+        font-size: 4vw;
+    }
+    /*KONTAKT*/
+    .contact,
+    .contact form {
+        max-width: 93%;
+    }
+    .container {
+        width: auto;
+    }
+}
