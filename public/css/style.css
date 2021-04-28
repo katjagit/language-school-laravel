@@ -167,7 +167,7 @@ header {
     color: white;
     padding-bottom: 5em;
     padding-top: 5em;
-    background-image: linear-gradient(rgba(8, 60, 102, 0.726), rgba(11, 12, 29, 0.904)), url(../medien/home/person.jpg);
+    background-image: linear-gradient(rgba(8, 60, 102, 0.726), rgba(11, 12, 29, 0.904)), url(../images/home/person.jpg);
 }
 
 header h1 {
@@ -228,7 +228,7 @@ main a:hover {
 /*Block Description*/
 
 .description {
-    background-image: linear-gradient(rgba(14, 60, 121, 0.726), rgb(2, 2, 5)), url(../medien/home/school.jpg);
+    background-image: linear-gradient(rgba(14, 60, 121, 0.726), rgb(2, 2, 5)), url(../images/home/school.jpg);
     background-repeat: no-repeat;
     max-width: 100%;
     color: white;
@@ -269,7 +269,7 @@ main a:hover {
 
 .counter {
     background-color: rgba(8, 59, 102, 1);
-    background-image: linear-gradient(#1bb4c1c4, #1aa3b7), url(../medien/home/city.jpg);
+    background-image: linear-gradient(#1bb4c1c4, #1aa3b7), url(../images/home/city.jpg);
     padding-top: 2em;
     padding-bottom: 2em;
 }

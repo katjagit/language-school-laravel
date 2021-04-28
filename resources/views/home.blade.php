@@ -14,17 +14,17 @@
     <main>
         <div class="icon_block flex wrap85">
             <div>
-                <img src="medien/home/icon1.png" alt="icon">
+                <img src="{{ asset("images/home/icon1.png") }}" alt="icon">
                 <h3>Einfach gemacht</h3>
                 <p>Unsere Web-App ist leicht zu bedienen. Einfach anmelden, einen Kurs auswählen und loslegen.</p>
             </div>
             <div>
-                <img src="medien/home/icon2.png" alt="icon">
+                <img src="{{ asset("images/home/icon2.png") }}" alt="icon">
                 <h3>Schnelle Kundenbetreuung</h3>
                 <p>Wir beantworten Fragen und helfen rund um die Uhr.</p>
             </div>
             <div>
-                <img src="medien/home/icon3.png" alt="icon">
+                <img src="{{ asset("images/home/icon3.png") }}" alt="icon">
                 <h3>Viele Kurse</h3>
                 <p>Wir haben eine große Auswahl an Kurse. Egal, wo du gerade bist, du kannst von überall lernen.</p>
             </div>
@@ -35,17 +35,17 @@
             <p class="wrap85">Wir haben viele Kurse zu verschiedenen Thematiken und fürs unterschiedliche Niveau vorbereitet. Du kannst an deinem Wortschatz arbeiten, Grammatik verbessern und vieles mehr.</p>
             <div class="flex wrap85 margin_top">
                 <div>
-                    <img src="medien/home/description1.jpg" alt="Wortschatz lernen">
+                    <img src="{{ asset("images/home/description1.jpg") }}" alt="Wortschatz lernen">
                     <h3>Wortschatz</h3>
                     <p>Lerne Wortschatz mit einem Wortschatzkurs. Schaue dir Lektionen dazu an, mache Übungen und prüfe deine Fertigkeiten mit einem Test an.</p>
                 </div>
                 <div>
-                    <img src="medien/home/description2.jpg" alt="Grammatik lernen">
+                    <img src="{{ asset("images/home/description2.jpg") }}" alt="Grammatik lernen">
                     <h3>Grammatik</h3>
                     <p>Wir haben auch Kurse, um deine Grammatik zu verbessern. Einfach ein Video ansehen und in den Übungen gleich anwenden. Es macht Spaß.</p>
                 </div>
                 <div>
-                    <img src="medien/home/description3.jpg" alt="Schreiben üben">
+                    <img src="{{ asset("images/home/description3.jpg") }}" alt="Schreiben üben">
                     <h3>Schreiben</h3>
                     <p>In jedem Kurs gibt es Schreibaufgaben. Unsere Lehrer korrigieren deinen Text und geben dir ein persönliches Feedback. </p>
                 </div>
